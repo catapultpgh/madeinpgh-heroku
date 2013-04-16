@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
-  database: citizenry_dev
-  encoding: sql_ascii
+  database: madeinpgh_dev
+  encoding: utf8
 
   # this works for local development as well
   # adapter: sqlite3
@@ -11,5 +11,5 @@ development:
 
 test:
   adapter: postgresql
-  database: citizenry_test
-  encoding: sql_ascii
+  database: madeinpgh_test
+  encoding: utf8
