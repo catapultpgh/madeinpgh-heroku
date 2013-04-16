@@ -3,7 +3,7 @@
 common:
   providers:
     - twitter
-    - linked_in
+    # - linked_in
   auth_credentials:
     twitter:
       key: "<%= ENV['TWITTER_KEY'] %>"
