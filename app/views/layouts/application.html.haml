@@ -8,7 +8,8 @@
       = "#{SETTINGS['organization']['name']}: A community-edited guide to the AWESOME CREATIVE, TECHNOLOGY, AND BUSINESS COMMUNITY of Philadelphia, PA"
     %meta{:name=>"viewport", :content=>"width=device-width, user-scalable=no"}
     %meta{:name=>"google-site-verification", :content=>"FjOa1nG7s3qeFYrutJ7r1aphcN8OwlOhOz1ftdiXUuc"}
-    %meta{:name=>"description", :content=>"WeWorkInPhilly is a 100% community-edited guide to the creative, technology, and business community in Philadelphia. "}
+    /MadeInPgh TODO 
+    /%meta{:name=>"description", :content=>"WeWorkInPhilly is a 100% community-edited guide to the creative, technology, and business community in Philadelphia. "}
     %link{:rel => 'search', :type => 'application/opensearchdescription+xml', :href => '/opensearch.xml', :title => SETTINGS['organization']['name']}
     - force_mobile = params[:force_mobile].present?
     -#
@@ -95,5 +96,7 @@
         = twitter_link SETTINGS['organization']['twitter']
         on Twitter
       #human_credit
-        Brought to you by
-        = link_to("many contributors", "https://github.com/cera/We-Work-In-Philly/blob/master/Contributors.md")
+        Deployed rapidly thanks to 
+        = link_to("the contributors of WeWorkInPhilly", "https://github.com/cera/We-Work-In-Philly/blob/master/Contributors.md")
+        Ported for Pittsburgh by some folks at 
+        = link_to("CatapultPGH", "http://catapultpgh.org")
