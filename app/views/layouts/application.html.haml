@@ -87,18 +87,20 @@
       #citizenry_credit
         Powered by
         = link_to("Citizenry", "http://github.com/reidab/citizenry/") + '.'
-      #contact_link
-        Email
-        = mail_to "#{SETTINGS['organization']['email']}"
-      #twitter_link
-        Follow
-        = twitter_link SETTINGS['organization']['twitter']
-        on Twitter
+      / #contact_link
+      /   Email
+      /   = mail_to "#{SETTINGS['organization']['email']}"
+      / #twitter_link
+      /   Follow
+      /   = twitter_link SETTINGS['organization']['twitter']
+      /   on Twitter
       #human_credit
-        Deployed rapidly thanks to 
-        = link_to("the contributors of WeWorkInPhilly", "https://github.com/cera/We-Work-In-Philly/blob/master/Contributors.md")
-        Ported for Pittsburgh by some folks at 
-        = link_to("CatapultPGH", "http://catapultpgh.org")
+        #human_credit_philly
+          Deployed rapidly thanks to 
+          = link_to("the contributors of WeWorkInPhilly", "https://github.com/cera/We-Work-In-Philly/blob/master/Contributors.md")
+        #human_credit_pgh
+          Ported for Pittsburgh by some folks at 
+          = link_to("CatapultPGH", "http://catapultpgh.org")
 
     - if !Rails.env.production?
       :javascript
